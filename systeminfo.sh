@@ -29,6 +29,34 @@
 #		    systems and therefore NOT tied into any one distro.
 #
 ##############################################################################
+##############################################################################
+# How To Run The Script
+# 
+# Once the script has been downloaded the run following commands :- 
+# 
+# mv linux-explorer.txt linux-explorer.sh 
+# chmod 750 linux-explorer.sh 
+# 
+# Now run the script :- 
+# 
+# Usage : ./linux-explorer.sh [option] 
+# -d Target directory for explorer files 
+# -t [hardware] [software] [configs] [cluster] [disks] [network] [all] 
+# -v Verbose output 
+# -s Verify Package Installation 
+# -h This help message 
+# -V Version Number of LINUXEXPLO 
+# 
+# 
+# Crontab Example
+# 
+# We would recommend you running the LINUXexplo script once a week
+# The gziped tar file from LINUXexplo should then be stored onto another server in the event of a disaster.
+# Below is an example of a cron entry to allow the LINUXexplo script to run each sunday of the week at 3:15am 
+# 
+# 15 3 * * 0 /opt/LINUXexplo/bin/linux-explorer.sh
+# 
+##############################################################################
 
  MYVERSION="0.210"
    LICENSE="GLPv2"
